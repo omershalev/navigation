@@ -983,7 +983,7 @@ AmclNode::uniformPoseGenerator(void* arg)
   pf_vector_t p;
   p.v[0] = MAP_WXGX(map, free_point.first);
   p.v[1] = MAP_WYGY(map, free_point.second);
-  p.v[2] = drand48() * 2 * M_PI - M_PI;
+  p.v[2] = drand48() * 2 * 0.087 - 0.087; // [-5,5] degrees
 #else
   double min_x, max_x, min_y, max_y;
 
